@@ -1,23 +1,23 @@
 <template>
   <div class="kuulutused">
     <Navbar />
-    
+
     <div class="kuulutuspk">
       <h1>KAOTATUD JA LEITUD LOOMAD</h1>
   </div>
-     
+
   <div class="conatainer-k">
     <div class="wrapper">
      <div class="box">
-		<img class="koer-k" src="koer11b.jpg" alt="Koerad"> 
+		<img class="koer-k" src="../assets/koer11b.jpg" alt="Koerad">
 		<p class="kadunud1"><b>Kadunud koerad</b></p>
 	 </div>
-	 	 
+
      <div class="box">
-		<img class="kass-k" src="kass6.jpg" alt="Kassid"> 
+		<img class="kass-k" src="../assets/kass6.jpg" alt="Kassid">
 		<p class="kadunud2"><b>Kadunud kassid</b></p>
         </div> </div>
-        
+
    <div class="additing">
 	   <h2 class="add-yourself">Lisa kuulutus</h2>
     <form class="outline">
@@ -39,7 +39,7 @@
           <input type="text" id="personal-tel" name="personal-tel" placeholder="Teie telefon"><br>
          <input type="submit" value="Saada">
        </form></div> </div>
- 
+
 </div>
 </template>
 
@@ -56,3 +56,61 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+   .kuulutuspk {
+    margin-left: 120px;
+    margin-top: 20px;
+    color: black;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.box {
+	margin-right: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.koer-k {
+	height: 350px;
+    width: auto;
+}
+
+.kass-k {
+	height: 350px;
+    width: auto;
+}
+
+.additing{
+    background-color: #a0ffc0;
+    width: 520px;
+    padding: 5px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+input {
+    padding: 5px;
+    font-size: 15px;
+}
+
+#missing, #animal-type, #breed-type, #subject, #finding-date, #chosen, #add-file, #personal-epost, #personal-tel {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 500px;
+    font-size: 15px;
+}
+</style>

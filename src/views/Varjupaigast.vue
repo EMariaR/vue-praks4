@@ -1,10 +1,10 @@
 
 <template>
- <div class="koerad">
+ <div class="varjupaigast">
     <Navbar />
 
-  <img class="taust2" src="taustale4.jpg">
-  
+  <img class="taust2" src="../assets/taustale4.jpg">
+
   <div class="varjupaik">
       <h2>VARJUPAIGAST</h2>
       <p>Meie visioon: Igal loomal on oma kodu</p>
@@ -14,9 +14,9 @@
       <p>Oleme tööandjaks 45le toredale inimesele üle Eesti.</p>
   </div>
 </div>
-</template>  
-  
-  <script>
+</template>
+
+<script>
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
@@ -29,3 +29,34 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.varjupaik {
+    margin-bottom: 380px;
+    margin-top: 170px;
+    size: 100px;
+    color: black;
+}
+
+.varjupaik h2 {
+    font-weight: bold;
+    color: black;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.varjupaik p {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.taust2 {
+    position: absolute;
+    opacity: 0.5;
+    width:100%;
+}
+
+</style>
